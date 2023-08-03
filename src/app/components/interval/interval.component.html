@@ -1,0 +1,23 @@
+
+<div class="container">
+  <br><br>
+  <!-- value binds full name to attribute in component single binding -->
+  <!-- ngModel need formsModule -->
+  <input type="text" name="name"  [value]="fullName" (change)="onChange()" [(ngModel)]="fullName"/>
+  <br><br>
+  <p>My name is {{fullName}}</p>
+  <br><br>
+  <button class="btn btn-primary" (click)="startCount()">
+    Start
+  </button>
+  <br><br>
+  <button class="btn btn-danger" (click)="stopCount()">
+    Stop
+  </button>
+  <br><br>
+  <button class="btn btn-warning" (click)="resetCount()">
+    Reset
+  </button>
+  <p>The count value is {{count}}</p>
+</div>
+

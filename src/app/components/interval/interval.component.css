@@ -1,0 +1,22 @@
+button{
+  height: 100px;
+  width: 200px;
+
+}
+
+.container{
+  text-align: center;
+}
+
+p{
+  font-size: 25px;
+  padding-top: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+
+
+}
