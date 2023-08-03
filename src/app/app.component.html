@@ -1,1 +1,19 @@
 <app-interval></app-interval>
+<br><br>
+<app-ngtemplate>
+
+    <p>NG CONTENT</p>
+    <br><br>
+    <button class="btn btn-primary" (click)="btnClicked($event)">Click Me</button>
+</app-ngtemplate>
+<br><br><br>
+<app-elements></app-elements>
+<br><br>
+<div *ngFor="let data of cards">
+  <app-card>
+    <header>{{data.title}}</header>
+    <content>{{data.body}}</content>
+  </app-card>
+</div>
+<br><br>
+

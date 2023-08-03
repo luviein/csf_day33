@@ -1,0 +1,5 @@
+<p #domParagraph1>elements works!</p>
+<br><br>
+<ul *ngFor="let category of categories; let i = index" #itemList>
+  <li (click)="getCategory($event, category, i)">{{category.value}}</li>
+</ul>
